@@ -1,0 +1,33 @@
+---
+---
+
+<form class="container grid space-y-2 max-w-3xl">
+
+  <label for="email" class="block">
+    <div>Email</div>
+    <input type="email" name="email" id="email" class="form-input rounded-md w-full" />
+  </label>
+  <label for="message" class="block">
+    <div>Üzenet</div>
+    <textarea class="form-textarea rounded-md w-full"></textarea>
+  </label>
+
+  <button
+    id="submit"
+    class=" rounded bg-green-400 p-3 w-fit justify-self-center"
+    type="submit"
+    onclick="submit"
+  >
+    Küldés
+  </button>
+</form>
+
+<script>
+  const submitButton = document.querySelector("#submit");
+  if (submitButton) {
+    submitButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("oh yeah");
+    });
+  }
+</script>
