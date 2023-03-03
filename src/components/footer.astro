@@ -1,21 +1,6 @@
 ---
-import { Icon } from "astro-icon";
-import HeroImage from "~/components/hero-image.astro";
 import type { FooterLink } from "~/types";
 import Contact from './contact.astro';
-
-const links: Array<FooterLink> = [
-  {
-    url: "https://astro.build/",
-    description: "Astro's official website",
-    icon: "mdi:home",
-  },
-  {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
-    icon: "fa-brands:github-alt",
-  },
-];
 ---
 
 <footer class="relative flex h-64 items-center justify-center border-default bg-default border-t">
